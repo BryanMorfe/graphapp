@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Graphs</title>
+        <link href="main.css" rel="stylesheet">
+        <script src="modules/draw.js"></script>
+        <script src="modules/graph.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <canvas id="drawing-canvas" width="500" height="500"></canvas>
+            <div class="graph-properties">
+                <h2>Properties</h2>
+                
+                <div class="property-enc">
+                    <p class="property">Num Vertices</p>
+                    <p class="property-val" id="n-vertices">0</p>
+                </div>
+                
+                <div class="property-enc">
+                    <p class="property">Num Edges</p>
+                    <p class="property-val" id="n-edges">0</p>
+                </div>
+                
+                <div class="property-enc">
+                    <p class="property">Multi Graph</p>
+                    <p class="property-val" id="multigraph">false</p>
+                </div>
+                
+                <div class="property-enc">
+                    <p class="property">Disconnected</p>
+                    <p class="property-val" id="disconnected">false</p>
+                </div>
+                
+                <div class="property-enc">
+                    <p class="property">Complete Graph</p>
+                    <p class="property-val" id="complete">false</p>
+                </div>
+
+                <div class="property-enc">
+                    <p class="property">Bipartite</p>
+                    <p class="property-val clickable" id="bipartite">Click Here</p>
+                </div>
+                
+                <div class="property-enc">
+                    <p class="property">Hamiltonian Path</p>
+                    <p class="property-val clickable" id="hamil-trail">Click Here</p>
+                </div>
+                
+                <div class="property-enc">
+                    <p class="property">Hamiltonian Graph</p>
+                    <p class="property-val clickable" id="hamiltonian">Click Here</p>
+                </div>
+                
+                <div class="property-enc">
+                    <p class="property">Euler Trail</p>
+                    <p class="property-val" id="euler-trail">false</p>
+                </div>
+                
+                <div class="property-enc">
+                    <p class="property">Eulerian Graph</p>
+                    <p class="property-val" id="eulerian">false</p>
+                </div>
+                
+                <div class="property-enc">
+                    <p class="property">Chromatic Number</p>
+                    <p class="property-val" id="chromatic-n">0</p>
+                </div>
+                
+                <div class="property-enc">
+                    <p class="property">Tree</p>
+                    <p class="property-val clickable" id="tree">Click Here</p>
+                </div>
+                
+                <div class="property-enc">
+                    <p class="property">Star Graph</p>
+                    <p class="property-val" id="star-graph">false</p>
+                </div>
+                
+            </div>
+            
+            <div class="controls">
+                <button class="on" id="draw-mode">Draw Mode</button>
+                <button class="on" id="show-grid">Show Grid</button>
+                <button class="on" id="snap-grid">Snap To Grid</button>
+                <button id="clear-graph">Clear Graph</button>
+            </div>
+            
+            <div class="additional-options">
+                <div id="sec-1">
+                    <button class="option" id="input-graph">Input Graph</button>
+                    <button class="option" id="adj-list">Adjecency List</button>
+                    <button class="option" id="graph-matrix">Graph Matrix</button>
+                </div>
+                <div id="sec-2">
+                    <button class="option" id="line-graph">Line Graph</button>
+                    <button class="option" id="get-euler-trail">Euler Trail</button>
+                    <button class="option" id="get-hamil-path">Hamiltonian Path</button>
+                    <button class="option" id="get-coloring">Coloring</button>
+                </div>
+            </div>
+            
+            <div class="canvas-info" id="canvas-mode">
+            </div>
+            
+            <div class="canvas-info" id="canvas-coords">
+            </div>
+        </div>
+    </body>
+</html>

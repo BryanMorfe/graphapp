@@ -1,0 +1,234 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 800px;
+    height: 640px;
+    margin: 10px auto;
+    background-color: white;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.15);
+}
+
+.container #drawing-canvas {
+    width: 500px;
+    height: 500px;
+    background-color: #fafafa;
+    float: left;
+}
+
+.graph-properties .property, .graph-properties .property-val {
+    float: left;
+    margin: 5px 0;
+}
+
+.graph-properties {
+    color: #005286;
+    float: left;
+    width: calc(100% - 500px);
+    height: 500px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.graph-properties h2 {
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-size: 24px;
+    text-align: center;
+}
+
+.graph-properties p {
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    font-size: 18px;
+    text-align: left;
+}
+
+.property-enc:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+.graph-properties .property {
+    width: calc(65% - 25px);
+    margin-left: 15px;
+}
+
+
+.graph-properties .property-val {
+    width: 35%;
+    color: #444;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    width: 125px;
+    height: 40px;
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-size: 16px;
+    box-sizing: border-box;
+    float: left;
+    transition: opacity .3s ease-in-out, background .3s ease-in-out;
+    -webkit-transition: opacity .3s ease-in-out, background .3s ease-in-out;
+    background-color: #909090;
+}
+
+button:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+.controls {
+    height: calc(500px + 40px + 10px);
+    width: 100%;
+}
+
+.controls button.on {
+    background-color: #1B6731;
+}
+
+.controls button.off {
+    background-color: #545454;
+}
+
+.controls #clear-graph {
+    background-color: #870002;
+}
+
+.additional-options {
+    display: block;
+    width: 500px;
+    height: 40px;
+}
+
+.additional-options #sec-1 {
+    display: block;
+    width: 375px;
+}
+
+.additional-options #sec-2 {
+    width: 500px;
+}
+
+.clickable:hover {
+    cursor: pointer;
+}
+
+.additional-options .option {
+    margin-bottom: 10px;
+}
+
+#input-graph {
+    background-color: #2AA839;
+}
+
+#adj-list {
+    background-color: #3C6EB4;
+}
+
+#graph-matrix {
+    background-color: #BA7627;
+}
+
+#line-graph {
+    background-color: #2AA839;
+}
+
+#get-euler-trail {
+    background-color: #3C6EB4;
+}
+
+#get-hamil-path {
+    background-color: #BA7627;
+}
+
+#get-coloring {
+    background-color: #3C6EB4;
+}
+
+.messageWindow {
+    position: absolute;
+    width: 300px;
+    left: calc(50% - 150px);
+    top: 25%;
+    background-color: white;
+}
+
+.messageWindow button.closeIcon {
+    background-color: #CA383A;
+    color: white;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-size: 16px;
+    float: right;
+}
+
+.messageWindow .content {
+    margin-top: 40px;
+    padding: 0 10px;
+    padding-bottom: 10px;
+}
+
+.messageWindow .content .graph-textarea {
+    width: 240px; 
+    margin-left: calc(150px - 135px); 
+    margin-top: 10px; 
+    height: 100px;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-size: 16px;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    border-color: #d8d8d8;
+}
+
+.messageWindow .content .graph-textarea:focus {
+    outline: none;
+}
+
+.messageWindow .message {
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-size: 16px;
+    color: black;
+}
+
+.confirmBtn {
+    background-color: #1B6731;
+    margin-left: calc(150px - 72.5px);
+    float: none;
+    margin-top: 10px;
+}
+
+.canvas-info {
+    position: relative;
+    width: auto;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-size: 14px;
+    color: #676767;
+}
+
+#canvas-mode {
+    bottom: 110px;
+    text-align: left;
+    right: calc(525px - 16px - 16px);
+}
+
+#canvas-coords {
+    bottom: 126px;
+    right: 310px;
+    text-align: right;
+}
+
+
+
