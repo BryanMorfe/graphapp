@@ -1,10 +1,10 @@
 # Documentation
 
 ## Index
-- [Launching The App]()
-- [File Index]()
-- [Algorithm Descriptions]()
-- [How To Use]()
+- [Launching The App](https://github.com/BryanMorfe/graphapp/blob/master/DOCUMENTATION.md#launching-the-app)
+- [File Index](https://github.com/BryanMorfe/graphapp/blob/master/DOCUMENTATION.md#file-index)
+- [Algorithm Descriptions](https://github.com/BryanMorfe/graphapp/blob/master/DOCUMENTATION.md#algorithm-descriptions)
+- [How To Use](https://github.com/BryanMorfe/graphapp/blob/master/DOCUMENTATION.md#how-to-use)
 
 ## Launching the app
 The most up to date app is located at https://bryanmorfe.com/apps/graph/, however, you want to run the app from you computer (offline), you can just open the "index.html" with a web browser.
